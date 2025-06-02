@@ -6,11 +6,6 @@
 **Problem:**  
 Create a function that prompts the user for the radius of a circle, validates the input as a finite positive number, then calculates and returns the area of the circle rounded to 2 decimal places.
 
-**Formula:**  
-\[
-\text{Area} = \pi \times r^2
-\]
-
 **Hint:**  
 Use `Number()`, `isFinite()`, `Math.PI`, `Math.pow()`, and `toFixed()`.
 
@@ -19,7 +14,7 @@ Use `Number()`, `isFinite()`, `Math.PI`, `Math.pow()`, and `toFixed()`.
 
 **Sample Output:**  
 `Area of circle with radius 7 is 153.94`  
-*The area is calculated using π × 7², where π ≈ 3.1416, rounded to 2 decimals.*
+*The area is calculated using π × 7², rounded to 2 decimals.*
 
 **What to Use:**  
 `Number()`, `isFinite()`, `Math.PI`, `Math.pow()`, `toFixed()`
@@ -29,9 +24,6 @@ Use `Number()`, `isFinite()`, `Math.PI`, `Math.pow()`, and `toFixed()`.
 ## 2. 🔐 OTP Generator (6-digit, No Leading Zeros)  
 **Problem:**  
 Create a function that generates a 6-digit OTP as a number, ensuring no leading zeros.
-
-**Formula:**  
-Generate a random integer \( n \) where \( 100000 \leq n \leq 999999 \).
 
 **Hint:**  
 Use `Math.random()` scaled between 100000 and 999999, then `Math.floor()`.
@@ -49,9 +41,6 @@ Use `Math.random()` scaled between 100000 and 999999, then `Math.floor()`.
 **Problem:**  
 Create a function that simulates rolling a 6-sided dice returning a random integer from 1 to 6.
 
-**Formula:**  
-Random integer \( n \) where \( 1 \leq n \leq 6 \).
-
 **Hint:**  
 Use `Math.random()`, scaled and rounded appropriately.
 
@@ -67,11 +56,6 @@ Use `Math.random()`, scaled and rounded appropriately.
 ## 4. ⛽ Fuel Consumption Calculator  
 **Problem:**  
 Calculate fuel consumption in km/l given distance traveled and fuel used.
-
-**Formula:**  
-\[
-\text{Fuel Consumption} = \frac{\text{Distance (km)}}{\text{Fuel (liters)}}
-\]
 
 **Hint:**  
 Validate inputs as finite numbers.
@@ -92,16 +76,6 @@ Distance: `450`, Fuel: `35.5`
 **Problem:**  
 Calculate monthly EMI based on principal, annual interest rate, and tenure (years).
 
-**Formula:**  
-\[
-EMI = P \times \frac{r(1+r)^n}{(1+r)^n - 1}
-\]
-
-Where:  
-- \(P\) = principal amount  
-- \(r\) = monthly interest rate = annual rate / 12 / 100  
-- \(n\) = total months = tenure × 12  
-
 **Hint:**  
 Use `parseFloat()`, `Math.pow()`, and `Math.round()`.
 
@@ -120,11 +94,6 @@ Principal: 500000, Rate: 8.5%, Tenure: 20 years
 ## 6. 🌡️ Temperature Converter with Validation  
 **Problem:**  
 Convert Celsius temperature to Fahrenheit with input validation.
-
-**Formula:**  
-\[
-°F = (°C \times \frac{9}{5}) + 32
-\]
 
 **Hint:**  
 Use `Number()`, `isFinite()`, `toFixed()` and return `false` on invalid input.
@@ -150,9 +119,6 @@ Use `Number()`, `isFinite()`, `toFixed()` and return `false` on invalid input.
 ## 7. 🎫 Random Coupon Code Generator (6-digit)  
 **Problem:**  
 Generate a random 6-digit coupon code number without leading zeros.
-
-**Formula:**  
-Same as OTP: \( 100000 \leq n \leq 999999 \)
 
 **Sample Output:**  
 `Coupon code generated: 345678`
@@ -230,16 +196,6 @@ Return grade (A-F) based on score 0-100; false for invalid.
 **Problem:**  
 Calculate compound interest final amount.
 
-**Formula:**  
-\[
-A = P \times (1 + \frac{r}{100})^n
-\]
-
-Where:  
-- \(P\) = principal  
-- \(r\) = annual rate (%)  
-- \(n\) = years  
-
 **Sample Input:**  
 P=10000, r=5, n=3
 
@@ -254,11 +210,6 @@ P=10000, r=5, n=3
 ## 12. ⚖️ BMI Calculator with Validation  
 **Problem:**  
 Calculate BMI from weight (kg) and height (m).
-
-**Formula:**  
-\[
-BMI = \frac{weight}{height^2}
-\]
 
 **Sample Input:**  
 Weight = 70, Height = 1.75
@@ -403,4 +354,3 @@ Income = 9000, Expenses = 2500
 
 ---
 
-*Feel free to ask for any function implementations or further formatting!*
