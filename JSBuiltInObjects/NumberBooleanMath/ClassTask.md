@@ -83,7 +83,7 @@ Use `parseFloat()`, `Math.pow()`, and `Math.round()`.
 Principal: 500000, Rate: 8.5%, Tenure: 20 years
 
 **Sample Output:**  
-`Monthly EMI is 4207`  
+`Monthly EMI is 4339`  
 *Monthly payment calculated from compound interest formula.*
 
 **What to Use:**  
