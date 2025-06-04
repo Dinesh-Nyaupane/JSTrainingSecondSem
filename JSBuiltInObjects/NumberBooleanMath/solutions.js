@@ -141,18 +141,48 @@ function calculateBMI(weight, height) {
 console.log(calculateBMI(70, 1.75)); // BMI = 70 / (1.75^2) = 22.9
 
 // 13. Maximum Transaction Finder
-function findMaxTransaction(amount1, amount2, amount3) {
-  const validAmounts = [amount1, amount2, amount3]
-    .map(Number)
-    .filter(amount => !isNaN(amount) && isFinite(amount));
+let amount1 = 1000;
+let amount2 = "abc";
+let amount3 = 1200.5;
 
-  if (validAmounts.length === 0) return false;
+let valid1 = parseFloat(amount1);
+let valid2 = parseFloat(amount2);
+let valid3 = parseFloat(amount3);
 
-  const maxAmount = Math.max(...validAmounts);
-  return "Maximum valid transaction amount is " + maxAmount;
+let hasValid = false;
+
+// Initialize an empty string to hold the Math.max() arguments
+let result;
+
+if (!isNaN(valid1) && isFinite(valid1)) {
+  result = valid1;
+  hasValid = true;
 }
 
-console.log(findMaxTransaction(1000, "abc", 1200.5)); // Should return 1200.5
+if (!isNaN(valid2) && isFinite(valid2)) {
+  if (hasValid) {
+    result = Math.max(result, valid2);
+  } else {
+    result = valid2;
+    hasValid = true;
+  }
+}
+
+if (!isNaN(valid3) && isFinite(valid3)) {
+  if (hasValid) {
+    result = Math.max(result, valid3);
+  } else {
+    result = valid3;
+    hasValid = true;
+  }
+}
+
+if (hasValid) {
+  console.log("Maximum valid transaction amount is " + result);
+} else {
+  console.log(false);
+}
+
 
 // 14. Square Root Checker
 function calculateSquareRoot(number) {
